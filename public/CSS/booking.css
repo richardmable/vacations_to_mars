@@ -1,0 +1,13 @@
+.booking_container{
+	width: 300px;
+	margin: 0 auto;
+}
+form {
+	display: inline-block;
+	width: 300px;
+}
+
+.booking_label_div {
+	padding: 1%;
+	display: block;
+}

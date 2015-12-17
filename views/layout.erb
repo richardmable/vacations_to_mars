@@ -1,3 +1,10 @@
 <!-- This page contains boiler plate HTML that will be placed on all pages
 	it is always called layout.erb and located in the views folder -->
-	
+<head>
+	<title><%= @title %></title>
+	<link rel="stylesheet" type="text/css" href="CSS/booking.css">
+	<link rel="stylesheet" href="CSS/confirmation.css">
+</head>
+
+
+	<%= yield %>
