@@ -22,5 +22,13 @@
 
 ##Booking Confirmation Page
 
-*Displays the users input for booking and "confirms" it
+* Displays the users input for booking and "confirms" it
+
+###Ruby Application
+
+>Create a small Ruby application that geolocate's the user's location, and automatically creates
+>a Google map route to the "launchpad". 
+
+###Lightbox application
+>There will be a "reminder" that pops up asking to book that will appear on the pages.
 
