@@ -28,10 +28,18 @@ $(document).ready(function(){
 	//uses fade in, fade out, hover, and make sure to go back
 	//to display: none
 
-	$(".slideout-menu ul .slideout-booking").hover(function(){
+	$(".slideout-menu ul .slideout-booking").hover(
+		function(){
 		$(".slideout-menu ul .slideout-booking ul").show(500)
-		$(".slideout-menu ul .slideout-booking ul").hide(500);
+		}
+	);
 
-	});
+	$(".slideout-menu ul .slideout-activities").hover(
+		function(){
+		$(".slideout-menu ul .slideout-activities ul").show(500)
+		}
+	);
+
+	var popOutBoxBook = $('.')
 
 });
