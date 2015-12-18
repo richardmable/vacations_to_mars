@@ -1,0 +1,42 @@
+.booking_container{
+	width: 300px;
+	margin: 0 auto;
+}
+form {
+	display: inline-block;
+	width: 275px;
+	/*border: solid black 1px;*/
+}
+
+.booking_label_div {
+	padding: 4% 2% 4% 2%;
+	display: block;
+}
+
+.booking_submit {
+	float: right;
+	background-color: #AD3502;
+	/*box-shadow: none;*/
+	border-radius: 5px;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+}
+
+.booking_float_right {
+	float: right;
+}
+
+#meeting {
+	margin-left: 5px;
+}
+
+input {
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+}
+
+.sex_input {
+	box-shadow: none;
+}
+
+.cryosleep_input {
+	box-shadow: none;
+}
