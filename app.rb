@@ -1,10 +1,9 @@
 require 'sinatra'
 require 'sendgrid-ruby'
 
-get '/' do
-	@title = 'Booking'
-	puts "LOADED"
-	erb :booking
+get '/navBar' do
+	puts "************** LOADED NAVBAR *************"
+	erb :navBar
 end
 
 get '/layout' do 
@@ -62,3 +61,6 @@ def mail_to(email)
 	puts res.body
 	
 end
+
+end
+

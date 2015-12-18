@@ -32,3 +32,5 @@
 ###Lightbox application
 >There will be a "reminder" that pops up asking to book that will appear on the pages.
 
+###Thanks to
+* [This site](http://alijafarian.com/css-transparent-drop-down-menu/), which had helpful tutorials for making drop down and slide out menus.
