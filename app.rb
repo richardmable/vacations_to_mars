@@ -1,9 +1,8 @@
 require 'sinatra'
 
-get '/' do
-	@title = 'Booking'
-	puts "LOADED"
-	erb :booking
+get '/navBar' do
+	puts "************** LOADED NAVBAR *************"
+	erb :navBar
 end
 
 get '/layout' do 
@@ -39,5 +38,3 @@ post '/confirmation' do
 	puts "*****************************"
 	erb :confirmation
 end
-
-
