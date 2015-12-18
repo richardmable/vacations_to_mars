@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sendgrid-ruby'
 
 get '/navBar' do
 	puts "************** LOADED NAVBAR *************"
@@ -33,8 +34,33 @@ post '/confirmation' do
 	@state = params[:state]
 	@sex = params[:sex]
 	@cryosleep = params[:cryosleep]
+	mail_to(@email)
 	puts "*****************************"
 	puts params.inspect
 	puts "*****************************"
 	erb :confirmation
 end
+
+
+
+def mail_to(email)
+
+	client = SendGrid::Client.new do |c|   
+		c.api_key = ENV['SENDGRID_API_KEY'] 
+	end
+
+	mail = SendGrid::Mail.new do |m|   
+		m.to = email  
+		m.from = 'emilymcc803@gmail.com'   
+		m.subject = 'Your MarsQuest Confirmation!'   
+		m.text = "Hi" + " " + @firstname + "! This email is confirming your MarsQuest booking! We cannot wait to travel with you!"
+	end
+
+	res = client.send(mail) 
+	puts res.code 
+	puts res.body
+	
+end
+
+end
+

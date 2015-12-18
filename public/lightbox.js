@@ -13,7 +13,7 @@ $("body").mouseover(function(){
 
 
 $(".lightbox-outer").click(function(){
-		$(".lightbox-outer").hide();
+		$(".lightbox-outer").fadeOut(1000);
 	});
 
 });
