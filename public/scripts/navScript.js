@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+	//script for toggle menu to appear and dissapear
 	$('.slideout-menu-toggle').on('click', function(event){
 		event.preventDefault();
 
@@ -21,4 +23,15 @@ $(document).ready(function(){
 			}, 250);
 		}
 	});
+
+	//script for having pop out sub menu "hang" for a second
+	//uses fade in, fade out, hover, and make sure to go back
+	//to display: none
+
+	$(".slideout-menu ul .slideout-booking").hover(function(){
+		$(".slideout-menu ul .slideout-booking ul").show(500)
+		$(".slideout-menu ul .slideout-booking ul").hide(500);
+
+	});
+
 });

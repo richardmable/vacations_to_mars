@@ -80,14 +80,14 @@
 
 /*styles for hiding slide out menu and having it pop*/
 
-.slideout-menu ul li a span.slideout-right {
+/*.slideout-menu ul li a span.slideout-right {
 	background: url(../images/arrow_right.png);
 	height: 7px;
 	position: absolute;
 	right: 20px;
 	top: 24px;
 	width: 10px;
-}
+}*/
 
 .slideout-menu ul li ul {
 	display: none;
@@ -95,11 +95,14 @@
 
 .slideout-menu ul li:hover ul {
 	background-color: #D24C12;
-	display: block;
-	font-size: .9em;
+/*	display: block;
+*/	font-size: .9em;
 	font-weight: normal;
 	padding: 10px;
 	position: absolute;
+	left: 250px;
+	top: 50px;
+	
 }
 
 .slideout-menu ul li ul li {
