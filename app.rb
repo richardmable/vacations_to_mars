@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sendgrid-ruby'
 
 get '/' do
 	@title = 'Booking'
@@ -11,6 +12,7 @@ get '/layout' do
 end
 
 get '/home' do 
+	mail_to("emilymcc803@gmail.com")
 	erb :home
 end
 
@@ -41,3 +43,21 @@ post '/confirmation' do
 end
 
 
+
+def mail_to(email)
+
+	client = SendGrid::Client.new do |c|   
+		c.api_key = ENV['SENDGRID_API_KEY'] 
+	end
+
+	mail = SendGrid::Mail.new do |m|   
+		m.to = email  
+		m.from = 'jon@nycda.com'   
+		m.subject = 'Hello Zach!'   
+		m.text = 'Check this out, bro!' 
+	end
+	res = client.send(mail) 
+	puts res.code 
+	puts res.body
+	
+end
