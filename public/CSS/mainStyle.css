@@ -77,6 +77,19 @@
 	transition-duration: 200ms;
 }
 
+.slideout-menu ul li span.slideout-right {
+	background: url(../images/arrow-right.png);
+	height: 7px;
+	position: absolute;
+	right: 20px;
+	top: 24px;
+	width: 10px;
+}
+
+.slideout-menu ul li ul {
+	display: none;
+}
+
 
 
 
