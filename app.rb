@@ -6,6 +6,17 @@ get '/' do
 	erb :booking
 end
 
+get '/layout' do 
+	erb :layout
+end
+
+get '/home' do 
+	erb :home
+end
+
+get '/review' do
+	erb :review
+end
 
 get '/booking' do
 	puts "**************************"
@@ -28,4 +39,5 @@ post '/confirmation' do
 	puts "*****************************"
 	erb :confirmation
 end
+
 
