@@ -1,0 +1,33 @@
+.description_container {
+	margin: 5px 0 0 0;
+}
+.description_box {
+	width: 900px;
+	margin: 0px auto 0px auto;
+}
+
+/*Styling for images in the body*/
+.description_box_image {
+	width: 300px;
+	border-radius: 50%;
+}
+
+.paragraph_box {
+	vertical-align: top;
+	width: 596px;
+	color: #232420;
+	display: inline-block;
+	text-align: center;
+}
+
+.db_paragraph {
+	display: inline-block;
+	width: 300px;
+
+}
+
+.spacer_box_image {
+	border-top: solid 5px #AD3502;
+	border-bottom: solid 5px #AD3502;
+	width: 100%;
+}
