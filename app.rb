@@ -62,5 +62,3 @@ def mail_to(email)
 	
 end
 
-end
-
