@@ -78,17 +78,6 @@
 	transition-duration: 200ms;
 }
 
-/*styles for hiding slide out menu and having it pop*/
-
-/*.slideout-menu ul li a span.slideout-right {
-	background: url(../images/arrow_right.png);
-	height: 7px;
-	position: absolute;
-	right: 20px;
-	top: 24px;
-	width: 10px;
-}*/
-
 .slideout-menu ul li ul {
 	display: none;
 	background-color: #D24C12;
@@ -97,7 +86,14 @@
 	padding: 10px;
 	position: absolute;
 	left: 250px;
-	top: 50px;	
+}
+
+.slideout-menu ul li.slideout-booking ul {
+	top: 50px;
+}
+
+.slideout-menu ul li.slideout-activities ul {
+	top: 100px;
 }
 
 .slideout-menu ul li ul li {
