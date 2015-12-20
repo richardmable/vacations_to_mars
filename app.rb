@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sendgrid-ruby'
 
-get '/navBar' do
-	puts "************** LOADED NAVBAR *************"
-	erb :navBar
+get "/" do
+	@header_image = "/images/home_header.jpg"
+	erb :home
 end
 
 get '/layout' do 
