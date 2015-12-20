@@ -1,0 +1,20 @@
+.confirmation_container {
+	overflow: auto;
+	height: 200px;
+	width: 700px;
+	margin: 4% auto;
+}
+
+.confirmation_body_title {
+	font-family: helvetica, serif;
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #232420;
+}
+
+.confirmation_body_paragraph {
+	float: right;
+	font-family: helvetica, serif;
+	font-size: 15px;
+	color: #232420;
+}

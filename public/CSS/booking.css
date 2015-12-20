@@ -1,11 +1,20 @@
 .booking_container{
-	width: 300px;
-	margin: 0 auto;
+	overflow: auto;
+	width: 700px;
+	margin: 5% auto;
 }
+
+.booking_body_title {
+	font-family: helvetica, serif;
+	font-size: 30px;
+	color: #232420;
+}
+
 form {
+	font-family: helvetica, serif;
 	display: inline-block;
 	width: 275px;
-	/*border: solid black 1px;*/
+	float: right;
 }
 
 .booking_label_div {
