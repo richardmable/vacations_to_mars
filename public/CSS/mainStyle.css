@@ -141,6 +141,7 @@ header {
 }
 
 footer {
+	clear: both;
 	width: 100%;
 	height: 100px;
 	background-color: #AD3502;
@@ -166,6 +167,7 @@ h4 {
 }
 
 .footer_block_title {
+	font-family: helvetica, serif;
 	color: #232420;
 	margin: 0 0 5 0px;
 }
@@ -187,10 +189,12 @@ h4 {
 .footer_item_anchor {
 	font-size: 12px;
 	text-decoration: none;
+	font-family: helvetica, serif;
 	color: #232420;
 }
 
 .footer_item_anchor:hover {
+	font-family: helvetica, serif;
 	color: #E6E6E6;
 }
 
@@ -201,6 +205,7 @@ h4 {
 }
 
 .footer_copyright span {
+	font-family: helvetica, serif;
 	float: right;
 	color: #232420;
 	font-size: 15px;
