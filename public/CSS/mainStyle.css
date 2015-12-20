@@ -122,6 +122,10 @@ header {
 	overflow: hidden;
 }
 
+.logo {
+	width: 150px;
+}
+
 /*lightbox css*/
 .lightbox-outer {
 	width: 100%;
@@ -145,6 +149,7 @@ footer {
 	height: 100px;
 	background-color: #AD3502;
 	padding: 40px 0px;
+	clear: both;
 }
 
 h4 {

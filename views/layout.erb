@@ -11,15 +11,19 @@
 	<script type="text/javascript" src="scripts/navScript.js"></script>
 		<title><%= @title %></title>
 	<link rel="stylesheet" type="text/css" href="CSS/booking.css">
+	<link rel="stylesheet" type="text/css" href="CSS/gallery.css">
 	<link rel="stylesheet" href="CSS/confirmation.css">
 	<script src="lightbox.js"></script>
 	<link rel="stylesheet" href="CSS/description.css">
-
 </head>
+
 	<body>
 		<header>
 		<!-- The images are linking from the app.rb file under @header_image. -SR -->
-		<img class="layout_header_image" src=<%= @header_image %> alt="">
+			<div style="position: relative; left: 0; top: 0;">
+	  			<img class="layout_header_image" src=<%= @header_image %> style="position: relative; top: 0; left: 0;"/>
+	  			<img class="logo" src="images/marsquestlogo_burned.png" style="position: absolute; top: 10px; left: 1100px;"/>
+			</div>
 		</header>
 		<!-- begin HTML for nav bar -->
 		<a href="#" class="slideout-menu-toggle">Toggle Menu</a>
@@ -47,11 +51,6 @@
 				</ul>
 			</nav>
 		</div>
-
-		<div class="lightbox-outer">	
-			<a href="/home"><img alt="lbimg" src="lightbox.png" class="lightboximage"></a>
-		</div>
-
 
 		<div class="lightbox-outer">	
 			<a href="/booking"><img alt="lbimg" src="lightbox.png" class="lightboximage"></a>

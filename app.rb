@@ -16,6 +16,7 @@ get '/home' do
 end
 
 get '/review' do
+	@header_image = "/images/description_header.jpg"
 	erb :review
 end
 
@@ -66,5 +67,6 @@ def mail_to(email)
 	res = client.send(mail) 
 	puts res.code 
 	puts res.body
+
 end
 
