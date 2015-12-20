@@ -1,8 +1,10 @@
 <!-- This page contains boiler plate HTML that will be placed on all pages
 	it is always called layout.erb and located in the views folder -->
 
+
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="CSS/mainStyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -11,9 +13,15 @@
 	<link rel="stylesheet" type="text/css" href="CSS/booking.css">
 	<link rel="stylesheet" href="CSS/confirmation.css">
 	<script src="lightbox.js"></script>
+	<link rel="stylesheet" href="CSS/description.css">
+
 </head>
 	<body>
-
+		<header>
+		<!-- The images are linking from the app.rb file under @header_image. -SR -->
+		<img class="layout_header_image" src=<%= @header_image %> alt="">
+		</header>
+		<!-- begin HTML for nav bar -->
 		<a href="#" class="slideout-menu-toggle">Toggle Menu</a>
 		<div class="slideout-menu">
 			<nav>
@@ -44,11 +52,49 @@
 			<a href="/home"><img alt="lbimg" src="lightbox.png" class="lightboximage"></a>
 		</div>
 
+
+		<div class="lightbox-outer">	
+			<a href="/booking"><img alt="lbimg" src="lightbox.png" class="lightboximage"></a>
+		</div>
+
+	<!-- 	************Let's try to keep the yield in the middle***************************** -->
 		<%= yield%>
 
-	<% yield %>
 
-
+		<!-- Footer for all pages. The text color is a softer black. Located in the mainstyle.css. -SR -->
+		<footer>
+			<div class="footer_inner">
+				<div class="footer_block_menu">
+					<h4 class="footer_block_title">PARTNERS</h4>
+					<ul class="footer_list">
+						<li class="footer_item"><a class="footer_item_anchor" href="#">NASA</a></li>
+						<li class="footer_item"><a class="footer_item_anchor" href="#">SPACEX</a></li>
+						<li class="footer_item"><a class="footer_item_anchor" href="#">BLUE ORIGIN</a></li>
+					</ul>
+				</div>
+				<div class="footer_block_menu">
+					<h4 class="footer_block_title">FOLLOW US</h4>
+					<ul class="footer_list">
+						<li class="footer_item"><a class="footer_item_anchor" href="#">FACEBOOK</a></li>
+						<li class="footer_item"><a class="footer_item_anchor" href="#">TWITTER</a></li>
+						<li class="footer_item"><a class="footer_item_anchor" href="#">INSTAGRAM</a></li>
+					</ul>
+				</div>
+				<div class="footer_block_menu" id="footer_block_about">
+					<h4 class="footer_block_title">ABOUT MARS QUEST</h4>
+					<ul class="footer_list">
+						<li class="footer_item"><a class="footer_item_anchor" href="#">COMPANY</a></li>
+						<li class="footer_item"><a class="footer_item_anchor" href="#">CAREER</a></li>
+						<li class="footer_item"><a class="footer_item_anchor" href="#">PRESS</a></li>
+					</ul>
+				</div>
+				<div class="footer_block_menu">
+				</div>
+			</div>
+			<div class="footer_copyright"><span>© 2015 MARS QUEST CORP.</span></div>
+		</footer>
 	</body>
+
+
 
 </html>
