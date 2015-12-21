@@ -1,9 +1,12 @@
 require 'sinatra'
 require 'sendgrid-ruby'
 
-get '/navBar' do
-	puts "************** LOADED NAVBAR *************"
-	erb :navBar
+get "/" do
+	@header_image = "/images/home_header.jpg"
+	puts "Test: Your ip address is #{request.ip}"
+	@user_ip = request.ip
+	puts "Test: #{@user_ip}"
+	erb :home
 end
 
 get '/' do
