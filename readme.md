@@ -36,7 +36,8 @@ _This has been moved to a later version of this website, however and IP check fu
 ###Thanks to
 * [This site](http://alijafarian.com/css-transparent-drop-down-menu/), which had helpful tutorials for making drop down and slide out menus.
 * And [Mars One](http://www.mars-one.com)
-###Future features:
+
+###Future Features
 * Using Google Maps API, grab user's location and return directions to the launch pad.
 * A moving background banner
 * A better body text, and an improved header text
