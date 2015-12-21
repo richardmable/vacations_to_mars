@@ -5,7 +5,7 @@
 
 /*styles for overall navbar, and to have hover and toggle work*/
 .slideout-menu {
-	background-color: #D24C12;
+	/*background-color: #D24C12;*/
 	background: linear-gradient(to bottom right, #D24C12, #A4021C);
 	position: fixed;
 	top: 0;
@@ -25,13 +25,20 @@
 
 .slideout-menu-toggle {
 	text-decoration: none;
-	font-size: 1.2em;
-	font-weight: 400;
-	background-color: #D24C12;
+	font-size: 1.5em;
+	font-weight: 800;
+	color: #232420;
+	background-color: rgba(173, 53, 2, .7);
 	padding: 5px;
 	text-align: center;
 	position: fixed;
 	top: 0px;
+	border-radius: 0px 0px 5px 0px;
+	transition-duration: 500ms;
+}
+
+.slideout-menu-toggle:hover {
+	background-color: #AD3502;
 }
 
 .slideout-menu .slideout-menu-toggle {
@@ -81,14 +88,17 @@
 
 /*styles for hiding slide out menu and having it pop*/
 
+
+
 .slideout-menu ul li ul {
 	display: none;
-	background-color: #D24C12;
+	background: linear-gradient(to bottom right, #D24C12, #A4021C);
 	font-size: .9em;
 	font-weight: normal;
 	padding: 10px;
 	position: absolute;
 	left: 250px;
+	border-radius: 0px 5px 5px 0px;
 }
 
 .slideout-menu ul li.slideout-booking ul {
@@ -110,7 +120,7 @@
 .slideout-menu ul li ul li a {
 	width: 170px;
 	padding: 15px 10px;
-	color: #fff;
+	color: #E9983F;
 }
 
 .layout_header_image {
@@ -219,6 +229,7 @@ h4 {
 	font-size: 15px;
 	padding: 20px 20px 0 0;
 }
+
 
 
 
