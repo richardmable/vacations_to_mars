@@ -1,17 +1,20 @@
 .reviews {
+	font-family: helvetica;
 	width: 900px;
-/*	float: left;*/
-/*	margin-top: 200px;*/
+	float: left;
+	margin-top: 25px;
 	margin-left: 210px;
+	margin-bottom: 25px;
 	font-size: 15px;
 	text-align: justify;
-	border: 5px solid #D84826;
+	border: 5px solid #AD3502;
 	border-radius: 10px;
+
 }
 
 
 .reviews>h1{
-	border: 5px solid #D84826;
+	border: 5px solid #AD3502;
 	border-radius: 10px;
 	background-color: #CDCAC5;
 	width: 80%;
@@ -20,14 +23,19 @@
 	font-size: 3em;
 }
 
+.reviews>h3{
+	font-family: helvetica;
+	text-align: center;
+}
+
 .customers{
-	border: 5px solid #D84826;
+	border: 5px solid #AD3502;
 	border-radius: 10px;
 	background-color: #CDCAC5;
 	float: left;
 	width: 30%;
 	margin: 1%;
-	height: 350px;
+	height: 450px;
 	text-align: center;
 }
 .customers>img{
