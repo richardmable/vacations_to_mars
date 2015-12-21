@@ -123,8 +123,11 @@ header {
 }
 
 .logo {
-	width: 150px;
+	width: 200px;
+	border-radius: 15%;
 }
+
+
 
 /*lightbox css*/
 .lightbox-outer {

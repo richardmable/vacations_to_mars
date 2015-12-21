@@ -6,6 +6,10 @@ get '/navBar' do
 	erb :navBar
 end
 
+get '/' do
+	erb :home
+end
+
 get '/layout' do 
 	erb :layout
 end
